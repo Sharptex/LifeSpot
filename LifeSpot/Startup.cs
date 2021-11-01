@@ -36,7 +36,6 @@ namespace LifeSpot
 
                 endpoints.MapGet("/Static/CSS/index.css", async context =>
                 {
-                    // по аналогии со страницей Index настроим на нашем сервере путь до страницы со стилями, чтобы браузер знал, откуда их загружать
                     var cssPath = Path.Combine(Directory.GetCurrentDirectory(), "Static", "CSS", "index.css");
                     var css = await File.ReadAllTextAsync(cssPath);
                     await context.Response.WriteAsync(css);
