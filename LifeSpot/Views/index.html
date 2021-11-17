@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script src="../Static/JS/index.js"></script>
+    <script>
+        checkAge();
+        handleSession();
+        sessionLog();
+
+        const inputFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+
+        setTimeout(() => alert('Подпишитесь на наш инстаграмм!'), 60000);
+    </script>
 </head>
+
+<!--SIDEBAR-->
+
 <body>
     <header id="header-index">
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <p>Покажем, что происходит прямо сейчас</p>
+        <input type="text" oninput="filter()" size=50%>
     </header>
-
-    <aside id="sidebar">
-        <div class="navbar">
-            <a href="/"><p>Все трансляции</p></a>
-            <a href="/"><p>О проекте</p></a>
-        </div>
-    </aside>
 
     <main>
         <div class="bordered">
@@ -40,4 +49,7 @@
         <p>Связаться с нами: contact@lifespot.ru</p>
     </footer>
 </body>
+
+<!--FOOTER-->
+
 </html>

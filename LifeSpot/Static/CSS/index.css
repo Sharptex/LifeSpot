@@ -53,3 +53,17 @@ header, footer, body, .video-container {
     font-family: "Helvetica 65 Medium", sans-serif;
     background-color: linen;
 }
+
+.comment {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.comments {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
