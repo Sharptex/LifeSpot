@@ -62,8 +62,51 @@ header, footer, body, .video-container {
 }
 
 .comments {
-    display: inline-block;
     margin-top: 0.5em;
     padding-left: 1%;
     padding-top: 1%;
+    display: block;
+    position: static;
 }
+
+.slider {
+    position: center;
+    display: block;
+}
+
+.leftBtn {
+    position: relative;
+}
+
+.pictureArea {
+    left: 60px;
+    top: -20px;
+    height: 300px;
+    position: relative;
+}
+
+.rightBtn {
+    left: 815px;
+    top: -320px;
+    position: relative;
+}
+
+.border-shadow {
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+    padding: 5px;
+}
+
+.pictureArea img {
+    position: absolute;
+    top: 0;
+    height: inherit;
+    width: inherit;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+
